@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-buttons,
+.display {
+    background-color: rgb(85, 86, 87);
+}
+
+.top-buttons {
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.top-buttons button {
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    border: none;
+}
+
+.close {
+    background-color: rgb(234, 105, 94);
+}
+
+.minimize {
+    background-color: rgb(245, 189, 79);
+}
+
+.expand {
+    background-color: rgb(97, 195, 83);
+}
+
+.display {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 10px;
+    height: 80px;
+}
+
+.result {
+    font-size: 40px;
+    color: rgb(238, 238, 238);
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.row {
+    display: flex;
+    flex-grow: 1;
+}
+
+.row button {
+    flex: 1;
+    border: none;
+    border: 1px solid rgb(85, 86, 87);
+    color: rgb(238, 238, 238);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button.zero {
+    flex-grow: 2.033;
+}
+
+.gray {
+    background-color: rgb(99, 100, 101);
+}
+
+.orange {
+    background-color: rgb(242, 162, 60);
+}
+
+.number {
+    background-color: rgb(125, 125, 125);
+}
+
+.row:last-of-type button:first-of-type {
+    border-radius: 0px 0px 0px 10px;
+}
+
+.row:last-of-type button:last-of-type {
+    border-radius: 0px 0px 10px 0px;
+}
+
+.number:active {
+    background-color: rgb(178, 178, 178);
+}
+
+.gray:active {
+    background-color: rgb(127, 127, 127);
+}
+
+.orange:active {
+    background-color: rgb(192, 128, 46);
+}
